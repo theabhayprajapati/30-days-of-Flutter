@@ -1,4 +1,5 @@
 import 'package:firstapp/pages/Homepage.dart';
+import 'package:firstapp/pages/loginPage.dart';
 import 'package:flutter/material.dart';
 
 // add media queries
@@ -12,16 +13,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    bringvegetables(rupees: 100, carryBag: true);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Homepage(),
+      themeMode: ThemeMode.dark,
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      // home: Homepage(),
+      routes: { 
+        '/': (context) => Homepage(),
+        '/login': (context) => const LoginPage(),
+      },
     );
-  }
-
-  bringvegetables({int rupees = 10, bool carryBag = false}) {
-    // take the money
-    // to to market
-    // return with vegetables
   }
 }
