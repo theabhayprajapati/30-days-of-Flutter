@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 class Homepage extends StatelessWidget {
+  Homepage({Key? key}) : super(key: key);
   final day = DateTime.now().day;
   final name = "Codepur";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Instagram"),
-        backgroundColor: Colors.pink,
+        title: const Text("Instagram"),
+        shadowColor: Colors.transparent,
+        backgroundColor: Colors.pinkAccent,
       ),
       body: Center(
         child: Container(
@@ -16,6 +18,8 @@ class Homepage extends StatelessWidget {
         ),
       ),
       drawer: const Drawer(),
+
+      
     );
   }
 }

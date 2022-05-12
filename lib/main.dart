@@ -12,9 +12,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bringvegetables(rupees: 100, carryBag: true);
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Homepage(),
     );
+  }
+
+  bringvegetables({int rupees = 10, bool carryBag = false}) {
+    // take the money
+    // to to market
+    // return with vegetables
   }
 }
