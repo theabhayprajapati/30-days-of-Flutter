@@ -10,7 +10,6 @@ class Homepage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Instagram"),
         shadowColor: Colors.transparent,
-        backgroundColor: Colors.pinkAccent,
       ),
       body: Center(
         child: Container(
@@ -18,8 +17,6 @@ class Homepage extends StatelessWidget {
         ),
       ),
       drawer: const Drawer(),
-
-      
     );
   }
 }
